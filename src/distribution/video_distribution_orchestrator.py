@@ -25,7 +25,7 @@ It is triggered once personalized video assets have been rendered upstream
 
 ## WHY THIS EXISTS
 
-At scale, GTM teams break down **not at content creation, but at execution**.
+At scale, GTM teams break down not at content creation, but at execution.
 
 This script removes all manual steps between personalized media production
 and outbound delivery:
@@ -35,7 +35,7 @@ and outbound delivery:
 - No manual copying of URLs or thumbnails  
 - No manual triggering of campaigns  
 
-The result is a **fully automated handoff** from personalized media production  
+The result is a fully automated handoff from personalized media production  
 directly into live GTM execution systems.
 
 ## IMPORTANT NOTES
