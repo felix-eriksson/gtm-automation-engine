@@ -1,11 +1,44 @@
-# Engagement Tracking
+# Engagement Tracking Subsystem
 
-This folder represents engagement and feedback logic used to measure GTM performance beyond basic open or click metrics.
+This subsystem is responsible for capturing **post-send engagement signals**
+from outbound GTM campaigns and feeding them back into real-time workflows.
 
-Business goals of this subsystem:
-- Capture and interpret engagement signals from personalized assets
-- Measure depth of interaction (e.g. video watch percentage)
-- Feed engagement data back into operational workflows
-- Enable prioritization and iteration based on real prospect behavior
+It closes the loop between:
+**outbound activity → prospect behavior → internal action**
 
-This subsystem closed the loop between GTM execution and decision-making.
+---
+
+## Why Engagement Tracking Matters
+
+In outbound GTM, *opens and clicks are weak signals*.
+
+High-intent signals come from:
+- How much of a video was watched
+- Whether a prospect meaningfully engaged
+- When that engagement happened
+
+These signals enable:
+- Prioritization of hot leads
+- Real-time Slack alerts for sales teams
+- Adaptive sequencing and follow-up logic
+
+---
+
+## High-Level Workflow
+
+```text
+Outbound Email Sent
+        ↓
+Prospect Clicks Video
+        ↓
+Video Platform Event (view)
+        ↓
+Zapier Webhook Trigger
+        ↓
+video_watch_rate_listener.py
+        ↓
+Engagement Metrics Extracted
+        ↓
+Zapier Response
+        ↓
+Slack / CRM / Scoring Logic
