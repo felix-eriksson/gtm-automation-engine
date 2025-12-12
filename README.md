@@ -52,30 +52,41 @@ The result is a repeatable, scalable GTM engine capable of producing and trackin
 
 ## High-Level Architecture
 
-1. Prospect Data  
-2. Data Enrichment & Verification  
-3. AI Personalization & Prompt Engineering  
-4. Media Asset Generation  
-5. Automated Video Rendering (Batch)  
-6. Distribution & Outreach Campaigns  
-7. Engagement Tracking & Analytics  
-8. GTM Feedback & Optimization
+```text
+Prospect Data
+  ↓
+Data Enrichment & Verification
+  ↓
+AI Personalization & Prompt Engineering
+  ↓
+Media Asset Generation
+  ↓
+Automated Video Rendering (Batch)
+  ↓
+Distribution & Outreach Campaigns
+  ↓
+Engagement Tracking & Analytics
+  ↓
+GTM Feedback & Optimization
+```
 
 ## Repository Structure
 
+```text
 src/
-  data_enrichment/
-  verification/
-  media_generation/
-  ai_personalization/
-  video_rendering/
-  distribution/
-  engagement_tracking/
+├── data_enrichment/
+├── verification/
+├── media_generation/
+├── ai_personalization/
+├── video_rendering/
+├── distribution/
+├── engagement_tracking/
 
 docs/
-  architecture.md
+└── architecture.md
+```
 
-Each folder contains representative scripts demonstrating how specific parts of the GTM system were engineered.
+Each folder contains representative scripts illustrating how individual GTM subsystems were designed, automated, and connected.
 
 ## Intended Use
 
