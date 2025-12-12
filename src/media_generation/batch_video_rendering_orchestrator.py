@@ -74,7 +74,7 @@ os.makedirs(W2L_LINK_DIR, exist_ok=True)
 VARIABLES_LIST = [
     ("Linkedin",  "LinkedinX.png"),
     ("Names",     "NameX.csv"),
-    ("Hemsida",   "HemsidaX.mp4"),
+    ("Website",   "WebsiteX.mp4"),
     ("Companies", "CompanyX.csv"),
     ("Clones",    "CloneX.mp4"),
     ("Voices",    "VoiceX.wav"),
